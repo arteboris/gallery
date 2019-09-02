@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-- В этот список добавляй элементы галереи -->
+     <ul class="gallery"></ul>
+
+
+     <!--
+       Модальное окно для полноразмерного изображения.
+       Для того чтобы открыть, добавь на div.lightbox CSS-класс is-open
+     -->
+     <div class="lightbox">
+       <div class="lightbox__overlay"></div>
+ 
+       <div class="lightbox__content">
+         <img class="lightbox___image" src=" " alt="" />
+       </div>
+ 
+       <button
+         type="button"
+         class="lightbox__button"
+         data-action="close-lightbox">
+         <i class="material-icons">close</i>
+       </button>
+     </div>
+
+    <script src="./js/gallery.js" type="module"></script>
+    <script src="./js/gallery-items.js" type="module"></script>
+  
+</body>
+</html>
